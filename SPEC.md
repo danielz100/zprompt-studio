@@ -63,7 +63,7 @@ Web studio q traduce lenguaje humano → prompts físicos deterministas p/ Gemin
 |----|----|------|-------|
 | T1 | x | scaffold Next.js 15 App Router + TS + Tailwind + shadcn + pnpm | C1,C4 |
 | T2 | x | OSS hygiene: LICENSE MIT, README ES+EN, CONTRIBUTING, CODE_OF_CONDUCT, CHANGELOG, SECURITY.md | C9,C14 |
-| T3 | . | repo init: .gitignore, .env.example, issue+PR templates, labels good-first-issue | C10 |
+| T3 | x | repo init: .gitignore, .env.example, issue+PR templates, labels good-first-issue | C10 |
 | T4 | . | Supabase init: schema migrations, tables users/recipes/favorites, RLS policies | I.ext.supabase,V7 |
 | T5 | . | auth flow Supabase (email magic link + OAuth Google opt) | I.ui.routes,V7 |
 | T6 | . | BYOK store: client AES-GCM, settings UI, validación key | I.byok,V2,V13 |

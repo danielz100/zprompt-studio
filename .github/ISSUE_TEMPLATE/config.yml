@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/danielz100/zprompt-studio/discussions
+    about: Questions, ideas, show & tell — not bugs.
+  - name: 🔒 Security vulnerability
+    url: https://github.com/danielz100/zprompt-studio/blob/main/SECURITY.md
+    about: Report privately. Never open a public issue for security.
+  - name: 📐 Architecture (SPEC.md)
+    url: https://github.com/danielz100/zprompt-studio/blob/main/SPEC.md
+    about: Read the spec before proposing changes.
+  - name: 📜 Code of Conduct
+    url: https://github.com/danielz100/zprompt-studio/blob/main/CODE_OF_CONDUCT.md
+    about: Project standards for participation.

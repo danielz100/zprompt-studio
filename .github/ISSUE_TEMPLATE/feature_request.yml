@@ -1,0 +1,60 @@
+name: ✨ Feature request
+description: Propose a new feature, slider, or pillar parameter
+title: "feat: <short>"
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening: search existing issues + read [SPEC.md](../blob/main/SPEC.md) §G/§C.
+        Features that would let the model "infer" missing pillar data violate V1 and won't be accepted.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What can't a user do today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Be specific. Sketches/wireframes welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: Pillar affected
+      options:
+        - Core
+        - Optics
+        - Physics
+        - Design
+        - Chemistry
+        - Void
+        - Cross-pillar
+        - None (infra/tooling)
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: invariants
+    attributes:
+      label: Invariants impacted
+      description: Reference §V invariants from SPEC.md (V1, V4, V11, etc.)
+      placeholder: "V4 (mapping versioned), V11 (schemaVersion bump if breaking)"
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This does not require AI inference of missing pillar data (V1)
+          required: true
+        - label: I considered backward compatibility (V11)
+          required: true

@@ -1,0 +1,15 @@
+# CODEOWNERS — auto-request review from owners.
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-security/customizing-your-repository/about-code-owners
+
+* @danielz100
+
+# Architecture spec: any change requires owner review
+/SPEC.md @danielz100
+/CHANGELOG.md @danielz100
+
+# Security-sensitive paths
+/lib/zprompt/ @danielz100
+/lib/supabase/ @danielz100
+/lib/byok/ @danielz100
+/app/api/ @danielz100
+/.github/ @danielz100

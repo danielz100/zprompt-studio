@@ -1,0 +1,78 @@
+name: 🐛 Bug report
+description: Report a defect in zprompt-studio
+title: "bug: <short>"
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please fill all fields — vague reports get closed.
+        Security issues → [SECURITY.md](../blob/main/SECURITY.md), **never here**.
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit SHA
+      placeholder: "v0.1.0 or 1d0686a"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - UI / Sliders
+        - Pillar schema (Core/Optics/Physics/Design/Chemistry/Void)
+        - BYOK / API key
+        - Render pipeline
+        - Auth / Supabase
+        - PWA / offline
+        - i18n
+        - Docs
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Numbered list. Include slider values if relevant.
+      placeholder: |
+        1. Open /studio
+        2. Set Optics.focal_length=85mm, f_stop=1.8
+        3. Click Compile
+        4. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Browser + OS
+      placeholder: "Chrome 130 / macOS 15.1"
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors / network logs (redact secrets)
+      render: shell
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues
+          required: true
+        - label: I redacted any API keys, tokens, or PII
+          required: true

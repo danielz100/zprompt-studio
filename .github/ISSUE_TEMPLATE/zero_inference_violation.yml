@@ -1,0 +1,51 @@
+name: 🚨 Zero-inference violation
+description: Report a case where the system inferred missing pillar data instead of asking
+title: "zero-inference: <short>"
+labels: ["zero-inference-bug", "critical", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **V1 invariant**: zprompt-studio MUST ask when pillar data is missing. Never infer.
+        This template is for cases where the system "guessed" instead of blocking + asking.
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: What pillar field was empty? What did the system do anyway?
+      placeholder: "Optics.f_stop was empty. System rendered using default f/2.8 silently — should have blocked."
+    validations:
+      required: true
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: Pillar
+      options:
+        - Core
+        - Optics
+        - Physics
+        - Design
+        - Chemistry
+        - Void
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Specific field
+      placeholder: "f_stop, focal_length, light_setup, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Repro
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected (per V1)
+      placeholder: "UI should block Compile button + show 'Error de Física: Datos insuficientes' for the empty field."
+    validations:
+      required: true

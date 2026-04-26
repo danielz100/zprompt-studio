@@ -1,0 +1,93 @@
+# Declarative label set for zprompt-studio.
+# Sync via github-label-sync action (configured in T20 workflow).
+# After T3 push, run manually once or wait for CI in T20.
+
+# ─── Type ──────────────────────────────────────────────────
+- name: bug
+  color: d73a4a
+  description: Something isn't working
+- name: enhancement
+  color: a2eeef
+  description: New feature or request
+- name: documentation
+  color: 0075ca
+  description: Docs only
+- name: refactor
+  color: cfd3d7
+  description: Internal restructuring, no behavior change
+- name: performance
+  color: fbca04
+  description: Speed / memory / latency
+- name: security
+  color: b60205
+  description: Security-related (do NOT include reports here)
+- name: ci
+  color: 1d76db
+  description: CI/CD pipeline
+
+# ─── Priority ──────────────────────────────────────────────
+- name: critical
+  color: b60205
+  description: Drop everything
+- name: high
+  color: d93f0b
+- name: medium
+  color: fbca04
+- name: low
+  color: c5def5
+
+# ─── Status ────────────────────────────────────────────────
+- name: needs-triage
+  color: ededed
+- name: needs-repro
+  color: e99695
+- name: blocked
+  color: 5319e7
+- name: wontfix
+  color: ffffff
+- name: duplicate
+  color: cccccc
+
+# ─── Community ─────────────────────────────────────────────
+- name: good-first-issue
+  color: 7057ff
+  description: Welcoming for newcomers
+- name: help-wanted
+  color: 008672
+
+# ─── zprompt-specific ──────────────────────────────────────
+- name: physics-engine
+  color: 0e8a16
+  description: Light, materials, IOR, SSS
+- name: optics-logic
+  color: 1d76db
+  description: Focal length, aperture, lens character
+- name: zero-inference-bug
+  color: b60205
+  description: V1 violation — system inferred instead of asking
+- name: byok
+  color: 5319e7
+  description: BYOK / API key handling (V2, V13)
+- name: i18n
+  color: 006b75
+  description: Localization (V6)
+- name: a11y
+  color: 0e8a16
+  description: Accessibility (V15)
+- name: breaking-change
+  color: b60205
+  description: Bumps schemaVersion (V11)
+
+# ─── Pillar tags ───────────────────────────────────────────
+- name: pillar:core
+  color: c2e0c6
+- name: pillar:optics
+  color: c2e0c6
+- name: pillar:physics
+  color: c2e0c6
+- name: pillar:design
+  color: c2e0c6
+- name: pillar:chemistry
+  color: c2e0c6
+- name: pillar:void
+  color: c2e0c6
