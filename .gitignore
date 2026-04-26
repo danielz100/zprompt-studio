@@ -1,0 +1,49 @@
+# deps
+node_modules/
+.pnp
+.pnp.js
+.pnpm-store/
+
+# next
+.next/
+out/
+build/
+dist/
+
+# env (V14 — never commit secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# turbo
+.turbo
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# os
+.DS_Store
+Thumbs.db
+
+# editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# tests
+coverage/
+playwright-report/
+test-results/
+
+# misc
+*.tsbuildinfo
