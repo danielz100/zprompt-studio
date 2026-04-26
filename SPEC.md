@@ -65,7 +65,7 @@ Web studio q traduce lenguaje humano → prompts físicos deterministas p/ Gemin
 | T2 | x | OSS hygiene: LICENSE MIT, README ES+EN, CONTRIBUTING, CODE_OF_CONDUCT, CHANGELOG, SECURITY.md | C9,C14 |
 | T3 | x | repo init: .gitignore, .env.example, issue+PR templates, labels good-first-issue | C10 |
 | T4 | x | Supabase init: schema migrations, tables users/recipes/favorites, RLS policies | I.ext.supabase,V7 |
-| T5 | . | auth flow Supabase (email magic link + OAuth Google opt) | I.ui.routes,V7 |
+| T5 | x | auth flow Supabase (email magic link + OAuth Google opt) | I.ui.routes,V7 |
 | T6 | . | BYOK store: client AES-GCM, settings UI, validación key | I.byok,V2,V13 |
 | T7 | . | 6-pilar schema TS+Zod (`lib/zprompt/pillars.ts`): Core{subject_anatomy,action_physics,detail_density 0-1}, Optics{focal_length 14-200mm,f_stop 1.2-22,camera_angle,lens_character}, Physics{light_setup,lumen_intensity,material_ior,sss_depth}, Design{composition_math,aspect_ratio,negative_space_weight}, Chemistry{emulsion_type,grain_structure,sensor_noise_iso}, Void{semantic_exclusions,style_pollution_control} | C11,V1,V11 |
 | T8 | . | mapping table slider→physical params versionada (`lib/zprompt/mapping.ts`) | V4 |
